@@ -1,0 +1,1 @@
+This is asp.net mvc angular SPA project.
