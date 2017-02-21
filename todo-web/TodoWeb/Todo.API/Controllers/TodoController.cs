@@ -30,7 +30,7 @@ namespace Todo.API.Controllers
                 return Request.CreateResponse(HttpStatusCode.NotFound, err);
             }
 
-            return Request.CreateResponse(HttpStatusCode.NotFound);
+            return Request.CreateResponse<TodoItem>(HttpStatusCode.Found, _item);
         }
 
         // POST api/<controller>
